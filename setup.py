@@ -8,6 +8,8 @@ def setup():
   turtle = makeTurtle(boat)
   drawBoat(turtle,boat)
   location(turtle,"quay")
+  help()
+  intro()
 #end setup
 
 def square(turtle,x,y):
@@ -65,16 +67,29 @@ def location(turtle,name):
     moveTo(turtle,355,250)
   elif name == "food":
     moveTo(turtle,355,190)
-  elif name == "liveStock":
+  elif name == "livestock":
     moveTo(turtle,355,310)
   elif name == "ballast":
     moveTo(turtle,415,250)
   elif name == "rum":
     moveTo(turtle,415,190)
-  elif name == "incaGold":
-    moveTo(turtle,415,310)     
+  elif name == "gold":
+    moveTo(turtle,415,310)       
 #end location
 
+def help():  
+  print "At each point in the game you will be told which directions"
+  print "you can go.  You'll be able to go:"
+  print "(R)ight,(L)eft,(U)p,(D)own,(E)xit, or ask for (H)elp. \n"
+
+def intro():  
+  print "Let us pretend this is the year 1630, and that we have" 
+  print "purchased a passage on the Talbot, one of the English galleons"
+  print "sailing from Southampton Harbour this spring with John Winthrop???s" 
+  print "fleet of eleven ships. We feel confident about this vessel because" 
+  print "she transported another group of Puritan planters to New England" 
+  print "last year in 1629. The Massachusetts Bay Company rented her for" 
+  print "the expedition."
 ##################################################
 #END --- SETUP SECTION OF THE GAME  
 ##################################################
